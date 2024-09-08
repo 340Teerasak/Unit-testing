@@ -1,15 +1,26 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
-  </q-page>
+  <div class="htmlClass">
+    <h1>{{ surename }}</h1>
+    <h2>{{ lastname }}</h2>
+    <h3>{{ nickname }}</h3>
+    <h4>{{ studentnumber }}</h4>
+  </div>
 </template>
 
-<script setup>
-defineOptions({
-  name: 'IndexPage'
-});
+
+<script>
+export default {
+  name: 'HtmlComponent',
+  data() {
+    return {
+      surename: 'ธีรศักดิ์',
+      lastname: 'แก้วภา',
+      nickname: 'ไทม์',
+      studentnumber: '6604101340'
+
+    }
+  },
+}
 </script>
+
+<style scoped></style>
